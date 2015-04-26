@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/height_housing_item"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgHouseSnap"
+        android:layout_width="@dimen/width_house_icon"
+        android:layout_height="@dimen/height_house_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_big"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/home_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imgHouseSnap"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lblHouseListingDisplayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginLeft="@dimen/padding_big"
+            android:text="Villa Pentahouse"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/text_size_bigger"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgView360"
+                android:layout_width="@dimen/height_width_icon_360"
+                android:layout_height="@dimen/height_width_icon_360"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_big"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:gravity="left|center_vertical"
+                android:src="@drawable/i360" />
+
+            <ImageView
+                android:id="@+id/imgViewBioscope"
+                android:layout_width="@dimen/width_icon_bioscope"
+                android:layout_height="@dimen/height_icon_bioscope"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_big"
+                android:layout_toRightOf="@id/imgView360"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:gravity="left|center_vertical"
+                android:src="@drawable/binocular" />
+
+            <ImageView
+                android:id="@+id/imgViewLiveFeed"
+                android:layout_width="@dimen/height_width_icon_live_feed"
+                android:layout_height="@dimen/height_width_icon_live_feed"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_big"
+                android:layout_toRightOf="@id/imgViewBioscope"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:gravity="left|center_vertical"
+                android:src="@drawable/live_feed_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/width_arrow"
+        android:layout_height="@dimen/height_arrow"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/padding_big"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>
